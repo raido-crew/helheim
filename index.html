@@ -16,15 +16,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.0.0/pixi.min.js"></script>
 
     <script>
-        var size = [window.innerWidth, window.innerHeight];
-        var frameTick = 0;
+        let windowSize = [window.innerWidth, window.innerHeight];
+        let frameTick = 0;
+        const tileSpeed = 0.16;
+        const fenceHeightDecomal = 0.15625;
 
         function init() {
-            size = [window.innerWidth, window.innerHeight];
+            windowSize = [window.innerWidth, window.innerHeight];
             stage = new PIXI.Container();
             renderer = PIXI.autoDetectRenderer(
-                size[0],
-                size[1],
+                windowSize[0],
+                windowSize[1],
                 {view:document.getElementById("gCanvas")}
             );
             document.body.appendChild(renderer.view);
@@ -35,8 +37,8 @@
         }
 
         function update() {
-            far.tilePosition.x = 0 - frameTick * 0.08;
-            mid.tilePosition.x = 0 - frameTick * 0.16;
+            far.tilePosition.x = 0 - frameTick * tileSpeed / 2;
+            mid.tilePosition.x = 0 - frameTick * tileSpeed;
             frameTick ++;
 
             renderer.render(stage);
@@ -49,7 +51,7 @@
         }
 
         function makeTextures() {
-            var farTexture = PIXI.Texture.fromImage("resources/bgFar.png");
+            const farTexture = PIXI.Texture.fromImage("resources/bgFar.png");
             far = new PIXI.extras.TilingSprite(farTexture, window.innerWidth * 2, window.innerHeight);
             far.position.x = 0;
             far.position.y = 0;
@@ -57,10 +59,10 @@
             far.tilePosition.y = 0;
             stage.addChild(far);
 
-            var midTexture = PIXI.Texture.fromImage("resources/bgMid.png");
-            mid = new PIXI.extras.TilingSprite(midTexture, window.innerWidth * 2, window.innerHeight * 0.15625);
+            const midTexture = PIXI.Texture.fromImage("resources/bgMid.png");
+            mid = new PIXI.extras.TilingSprite(midTexture, window.innerWidth * 2, window.innerHeight * fenceHeightDecomal);
             mid.position.x = 0;
-            mid.position.y = window.innerHeight * (1 - 0.15625);
+            mid.position.y = window.innerHeight * (1 - fenceHeightDecomal);
             mid.tilePosition.x = 0;
             mid.tilePosition.y = 0;
             stage.addChild(mid);
