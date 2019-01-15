@@ -1,8 +1,48 @@
 {
 	"frames": {
-		"bloodTexture.png": {
+		"HPBarGreen.png": {
 			"frame": {
 				"x": 1,
+				"y": 1,
+				"w": 1,
+				"h": 15
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1,
+				"h": 15
+			},
+			"sourceSize": {
+				"w": 1,
+				"h": 15
+			}
+		},
+		"HPBarRed.png": {
+			"frame": {
+				"x": 4,
+				"y": 1,
+				"w": 1,
+				"h": 15
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1,
+				"h": 15
+			},
+			"sourceSize": {
+				"w": 1,
+				"h": 15
+			}
+		},
+		"bloodTexture.png": {
+			"frame": {
+				"x": 7,
 				"y": 1,
 				"w": 32,
 				"h": 32
@@ -22,7 +62,7 @@
 		},
 		"bulletTextureClass1.png": {
 			"frame": {
-				"x": 35,
+				"x": 41,
 				"y": 1,
 				"w": 32,
 				"h": 32
@@ -42,7 +82,7 @@
 		},
 		"bulletTextureClass2.png": {
 			"frame": {
-				"x": 69,
+				"x": 75,
 				"y": 1,
 				"w": 32,
 				"h": 32
@@ -62,7 +102,7 @@
 		},
 		"bulletTextureClass3.png": {
 			"frame": {
-				"x": 103,
+				"x": 109,
 				"y": 1,
 				"w": 32,
 				"h": 32
@@ -82,7 +122,7 @@
 		},
 		"bulletTextureClass4.png": {
 			"frame": {
-				"x": 137,
+				"x": 143,
 				"y": 1,
 				"w": 250,
 				"h": 250
@@ -102,7 +142,7 @@
 		},
 		"enemyDamagedTexture.png": {
 			"frame": {
-				"x": 389,
+				"x": 395,
 				"y": 1,
 				"w": 32,
 				"h": 32
@@ -122,7 +162,7 @@
 		},
 		"enemyDeadTexture.png": {
 			"frame": {
-				"x": 423,
+				"x": 429,
 				"y": 1,
 				"w": 32,
 				"h": 32
@@ -142,7 +182,7 @@
 		},
 		"enemyTexture.png": {
 			"frame": {
-				"x": 457,
+				"x": 463,
 				"y": 1,
 				"w": 32,
 				"h": 32
@@ -162,7 +202,7 @@
 		},
 		"grassTexture.png": {
 			"frame": {
-				"x": 491,
+				"x": 497,
 				"y": 1,
 				"w": 32,
 				"h": 32
@@ -262,7 +302,7 @@
 		},
 		"playerClass4.png": {
 			"frame": {
-				"x": 389,
+				"x": 395,
 				"y": 35,
 				"w": 32,
 				"h": 32
@@ -285,7 +325,7 @@
 		"image": "texturePack1.png",
 		"format": "RGBA8888",
 		"size": {
-			"w": 524,
+			"w": 530,
 			"h": 252
 		},
 		"scale": "1"
