@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Helheim</title>
+  <link href="game.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:500" rel="stylesheet">
+</head>
+<body>
+<!-- Loading Screen -->
+<div id="LoadingScreen">
+  <div id="LoadingStatus">Loading files..</div>
+</div>
+<!-- Loading Screen end-->
+
+<canvas id="gCanvas">Canvas didn't work!!..</canvas>
+
+<!-- GUI -->
+<div id="AmmoGUI" class="noSelect">Ammo: n/a</div>
+<div id="ScoreGUI" class="noSelect"></div>
+<div id="HPGUI" class="noSelect">HP: n/a</div>
+<div id="RestartGUI" onclick="window.location.reload()"></div>
+
+<div id="GameOver">
+  <div id="GameOverText"></div>
+</div>
+<!-- GUI end -->
+
+<!-- JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.8.2/pixi.min.js"></script>
+<script src="smoothie.min.js"></script>
+<script src="colyseus.js"></script>
+<script src="stats.js"></script>
+<script src="keys.js"></script>
+<script src="game-vars.js"></script>
+<script src="game.js"></script>
+<!-- JS end -->
+
+
+</body>
+</html>
