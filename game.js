@@ -60,8 +60,9 @@ function init() {
 }
 
 function updateFrame() {
-  numFrame++;
-  if (numFrame % 100) {
+  const now = Date.now();
+  if (now - timeFrame < 100) {
+    timeFrame = now;
     room.send([
       'rotation',
       rotationToPoint(renderer.plugins.interaction.mouse.global,
