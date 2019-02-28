@@ -205,20 +205,20 @@ function updateHPGUI() {
 }
 
 function updateScoreGUIPlayers() {
-  let list = document.getElementById('ScoreGUI').innerHTML;
-  list = '';
+  let list = '';
   for (let player in players) {
     if (players.hasOwnProperty(player)) {
-      updateScoreGUI(list, players[player]['clientName'],
+      list = updateScoreGUI(list, players[player]['clientName'],
           players[player]['score']);
     }
   }
+  document.getElementById('ScoreGUI').innerHTML = list;
 }
 
 function updateScoreGUI(list, name, scoreCount) {
   if (!list) list += '<br>';
-  document.getElementById('ScoreGUI').innerHTML = list + name + ': ' +
-      scoreCount;
+  list = list + name + ': ' + scoreCount;
+  return list;
 }
 
 function updateLoadingStatusGUI(status) {
