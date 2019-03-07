@@ -252,7 +252,7 @@ function deletePlayer(player) {
 
 function updatePlayerHPBars() {
   for (let player in players) {
-    if (players.hasOwnProperty(player) && player.hasOwnProperty("hpBar")) {
+    if (players.hasOwnProperty(player) && player.hasOwnProperty('hpBar')) {
       updateHPBar(player);
     }
   }
