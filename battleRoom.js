@@ -64,7 +64,7 @@ class BattleRoom extends Room {
       player.node.root.updateItem(player);
 
       if (!player.isDead && player.isShooting && !player.isReloading &&
-          !player.isFireReloading) {
+          !player.isFireReloading && player.ammoCount > 0) {
         const bullet = player.shoot();
         world.add('bullet', bullet);
       }
