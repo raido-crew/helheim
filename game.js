@@ -70,6 +70,8 @@ function updateFrame() {
   }
   //movePlayersAtTopLayer();
 
+  rotateCurrentPlayer();
+
   updateAmmoGUI();
   updateHPGUI();
   updateScoreGUIPlayers();
@@ -301,4 +303,10 @@ function rotationToPoint(targetPosition, objectPosition) {
   const dist_Y = targetPosition.y - objectPosition.y;
   const dist_X = targetPosition.x - objectPosition.x;
   return Math.atan2(dist_Y, dist_X);
+}
+
+function rotateCurrentPlayer() {
+  const currentPlayer = players[currentPlayerId];
+  currentPlayer.body.rotation = rotationToPoint(
+      renderer.plugins.interaction.mouse.global, currentPlayer);
 }
