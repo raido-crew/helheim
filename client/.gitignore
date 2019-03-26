@@ -1,0 +1,5 @@
+.idea/*
+*.7z
+sourceResources/*
+
+backup/

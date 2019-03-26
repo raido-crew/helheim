@@ -1,0 +1,217 @@
+html {
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  background-image: url("client/resources/background.png");
+  background-repeat: repeat;
+  background-color: #000000;
+}
+
+canvas {
+  position: fixed;
+  display: none;
+}
+
+#canvas {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  background-color: #222222;
+  z-index: 0;
+  color: #FFFFFF;
+}
+
+#AmmoGUI {
+  position: fixed;
+  z-index: 1;
+  top: 10px;
+  left: 50px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  color: #FFFFFF;
+  background-color: #222222;
+}
+
+#ScoreGUI {
+  position: fixed;
+  z-index: 1;
+  top: 10px;
+  left: 550px;
+  width: auto;
+  min-width: 100px;
+  height: auto;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  color: #FFFFFF;
+  background-color: #222222;
+}
+
+.noSelect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+#GameOver {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  z-index: 8;
+  background-color: #000000;
+  opacity: 0.7;
+}
+
+#GameOverText {
+  position: fixed;
+  z-index: 10;
+  top: 40%;
+  left: 35%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+#ClassSelection {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  z-index: 9;
+  background-color: #111111;
+  opacity: 0.8;
+}
+
+.ClassSelectionBody {
+  position: fixed;
+  top: 15%;
+  left: 15%;
+  width: 1000px;
+  height: 600px;
+}
+
+#ClassSelection1 {
+  position: relative;
+  z-index: 10;
+  opacity: 1;
+  width: 250px;
+  height: 400px;
+  background-image: url("client/resources/class1.png");
+  float: left;
+}
+
+#ClassSelection2 {
+  position: relative;
+  z-index: 10;
+  opacity: 1;
+  width: 250px;
+  height: 400px;
+  background-image: url("client/resources/class2.png");
+  float: left;
+}
+
+#ClassSelection3 {
+  position: relative;
+  z-index: 10;
+  opacity: 1;
+  width: 250px;
+  height: 400px;
+  background-image: url("client/resources/class3.png");
+  float: left;
+}
+
+#ClassSelection4 {
+  position: relative;
+  z-index: 10;
+  opacity: 1;
+  width: 250px;
+  height: 400px;
+  background-image: url("client/resources/class4.png");
+  float: left;
+}
+
+#RestartGUI {
+  position: fixed;
+  display: block;
+  z-index: 9;
+  top: 2%;
+  right: 2%;
+  width: 75px;
+  height: 75px;
+  background-image: url("client/resources/restartGUI.png");
+}
+
+#HPGUI {
+  position: fixed;
+  z-index: 1;
+  top: 10px;
+  left: 250px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  color: #FFFFFF;
+  background-color: #222222;
+}
+
+.Announcement {
+  position: relative;
+  z-index: 10;
+  opacity: 1;
+  width: 950px;
+  height: 150px;
+  background-color: #DDDDDD;
+  float: left;
+  padding: 25px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.PoweredBlock {
+  position: relative;
+  z-index: 10;
+  opacity: 1;
+  width: 1000px;
+  height: 200px;
+  background-image: url("client/resources/powered.png");
+  float: left;
+  padding: 0;
+}
+
+#LoadingScreen {
+  top: 110px;
+  display: block;
+  position: fixed;
+  right: 0;
+  width: 200px;
+  height: 400px;
+  opacity: 0.9;
+  z-index: 99;
+  overflow:hidden;
+}
+
+
+#LoadingStatus {
+  position: absolute;
+  width: 216px;
+  height: 400px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 10px;
+  color: #111111;
+  text-align: center;
+  overflow-y:scroll;
+  background-color: #BBBBBB
+}
+
+#RoomSelection {
+  display: none;
+}
