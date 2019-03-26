@@ -61,7 +61,7 @@ function init() {
 
 function updateFrame() {
   const now = Date.now();
-  if (now - timeFrame < 100) {
+  if (now - timeFrame > 100) {
     timeFrame = now;
     room.send([
       'rotation',
@@ -266,8 +266,8 @@ function updateHPBar(player) {
     return;
   }
 
-  player.hpBar.position.x = player.x;
-  player.hpBar.position.y = player.y - HPBarWidth / 2;
+  player.hpBar.position.x = player.body.x;
+  player.hpBar.position.y = player.body.y - HPBarWidth / 2;
 
 }
 
