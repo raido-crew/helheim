@@ -100,7 +100,7 @@ canvas {
     opacity: 1;
     width: 250px;
     height: 400px;
-    background-image: url("resources/class1.png");
+    background-image: url("client/resources/class1.png");
     float: left;
 }
 #ClassSelection2 {
@@ -109,7 +109,7 @@ canvas {
     opacity: 1;
     width: 250px;
     height: 400px;
-    background-image: url("resources/class2.png");
+    background-image: url("client/resources/class2.png");
     float: left;
 }
 #ClassSelection3 {
@@ -118,7 +118,7 @@ canvas {
     opacity: 1;
     width: 250px;
     height: 400px;
-    background-image: url("resources/class3.png");
+    background-image: url("client/resources/class3.png");
     float: left;
 }
 #ClassSelection4 {
@@ -127,7 +127,7 @@ canvas {
     opacity: 1;
     width: 250px;
     height: 400px;
-    background-image: url("resources/class4.png");
+    background-image: url("client/resources/class4.png");
     float: left;
 }
 
@@ -139,7 +139,7 @@ canvas {
     right: 2%;
     width: 75px;
     height: 75px;
-    background-image: url("resources/restartGUI.png");
+    background-image: url("client/resources/restartGUI.png");
 }
 
 #HPGUI {
